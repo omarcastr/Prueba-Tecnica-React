@@ -1,4 +1,3 @@
-// src/types/dog.types.ts
 
 export interface BreedsResponse {
   message: { [key: string]: string[] };

@@ -2,7 +2,6 @@ import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/tool
 import { dogService } from '../services/dogService'; // Asegúrate de que este archivo exista
 import type { SelectedDog } from '../types/dog.ts';
 
-// ESTA ES LA PARTE QUE FALTABA: La función que descarga las razas
 export const fetchBreeds = createAsyncThunk('dog/fetchBreeds', async () => {
   const data = await dogService.getAllBreeds();
   return data.message;
